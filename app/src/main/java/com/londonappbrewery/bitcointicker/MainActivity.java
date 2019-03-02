@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 // called when response HTTP status is "200 OK"
                 Log.d("Bitcoin", "JSON: " + response.toString());
                 try {
-                    mPriceTextView.setText(response.getString("ask"));
+                    mPriceTextView.setText(response.getString("last"));
                 }
                 catch (JSONException e) {
                     e.printStackTrace();
